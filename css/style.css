@@ -120,7 +120,8 @@ body {
   transition: 0.3s;
 }
 
-.navbar .search-form .active {
+.navbar .search-form.active {
+  /* *6 */
   transform: scaleY(1);
 }
 .navbar .search-form input {

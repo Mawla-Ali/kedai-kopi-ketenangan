@@ -90,5 +90,5 @@ Menu section {
     3. Dalam memanggil class, kalau sudah spesifik, tidak perlu ditambah tag
     4. Perhatikan penggunaan gambar
     5. Dalam menggunakan feathericon, script harus ditaruh di paling bawah sebelum body
-
+    6. Dalam pembuatan search, jika menggunakan fitur ".active", jangan dispasi
 }
