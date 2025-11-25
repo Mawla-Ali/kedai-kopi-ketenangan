@@ -24,6 +24,7 @@ body {
 }
 
 /* Navbar start */
+
 .navbar {
   display: flex;
   /* 4 */
@@ -98,12 +99,45 @@ body {
 .navbar .navbar-extra a:hover {
   color: var(--primary);
 }
-
 #hamburger-menu {
   /* 21 */
   display: none;
 }
+/* Navbar search start */
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  /* 26 */
+  transform-origin: top;
+  /* 27 */
+  transition: 0.3s;
+}
 
+.navbar .search-form .active {
+  transform: scaleY(1);
+}
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--bg);
+}
+/* Navbar search end */
+/* Navbar end */
 /* Hero Queries */
 .hero {
   min-height: 100vh;
@@ -166,7 +200,7 @@ body {
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
-
+/* Hero section end */
 /* About section */
 .about,
 .menu,
@@ -209,7 +243,7 @@ body {
   font-weight: 200;
   line-height: 1.6;
 }
-
+/* About section end */
 /* Menu section */
 .menu h2,
 .kontak h2 {
@@ -257,7 +291,7 @@ body {
 .menu-card {
   text-align: center;
 }
-
+/* Menu section end */
 /* Kontak section */
 .kontak .row {
   display: flex;
@@ -301,6 +335,7 @@ body {
   background-color: var(--primary);
   cursor: pointer;
 }
+/* Kontak section end */
 /* Footer */
 footer {
   background-color: var(--primary);
@@ -340,6 +375,7 @@ footer .credit a {
 footer .credit a:hover {
   color: #fff;
 }
+/* Footer end */
 /* Media Queries */
 /* 22 */
 /* Laptop */

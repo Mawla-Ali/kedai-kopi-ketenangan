@@ -1,4 +1,4 @@
-// Toggle class active
+// Toggle class active untuk hamberger menu
 const navbarnav = document.querySelector(".navbar-nav");
 
 //Ketika humberger menu di klik
@@ -16,3 +16,11 @@ document.addEventListener("click", function (e) {
   }
   // }
 });
+
+// Toggle class active untuk search form
+const searchForm = document.querySelector(".search-form");
+const searchbox = document.querySelector("#search-box");
+
+document.querySelector("#search-button").onclick = () => {
+  searchForm.classList.toggle("active");
+};

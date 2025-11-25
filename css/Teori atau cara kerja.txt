@@ -49,6 +49,8 @@ Bagian CSS {
     24. display : block
         Agar menjadi lurus ke bawah. tidak samping kanan
     25. Dapat digunakan untuk membuat cara scroll menjadi lebih smooth 
+    26. Agar tab search memiliki tinggi 0
+    27. Agar ketika di tekan tombol search, muncul dari atas
 }
 
 Bagian HTML {
@@ -59,6 +61,8 @@ Bagian HTML {
     2. <div> (perintah) </div>
         tag div, dapat diartikan seperti fungsi atau prosedur yang ada di html
     3. dapat digunakan untuk menampilkan logo credit
+    4. place holder dapat digunakan untuk menempatkan tulisan di dalam form pencarian
+
 }
 
 Bagian Js {
