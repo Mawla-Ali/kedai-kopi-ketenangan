@@ -1,0 +1,90 @@
+Bagian CSS {
+    1. box-sizing : border-box
+        Agar tidak perlu mengatur dimensi dari elemen saat dikasih padding atau border
+    2. ouline :none;
+        berguna ketika mengasih style untuk button
+    3. text-decoration : none;
+        Berguna agar link tidak memiliki garis bawah
+    4. (#)display : flex;
+        Supaya mengatur elemen navbar. agar berada di samping 
+    5. justify-content : space-between
+        Supaya sejajar kiri kanan atau horizontal
+    6. align-items : center;
+        Supaya sejajar secara vertikal
+    7. xrem
+        pengali dari px huruf atau ukuran huruf
+    8. 7%
+        Agar space kanan dan kiri berada tetap 7%
+    9. rgba
+        Dapat digunakan untuk pemberian warna dan transparansi.
+        format = rgba(1,1,1,0.8)
+        angka terakhir, menunjukkan transparansi
+    10. Untuk membuat garis bawah
+    11. position : fixed
+        Agar tetap berada di posisi atas
+    12. top : 0
+        Agar ketarik ke atas
+    13. left :0
+        Agar ketarik ke kiri
+    14. right : 0
+        Agar ketarik ke kanan
+    15. z-index : x
+        Agar memberikan urutan kepentingan. semakin besar angka x, maka
+        semakin didahulukan. seperti interrupt
+    16. a:hover
+        Agar ketika link disorot menggunakan kursor, dapat berubah warna
+    17. a::after
+        spesifikasi ketika disorot
+    18. transform :scaleX(0)
+        Agar ketika belum disorot, belum muncul
+    19. a:hover::after
+        Agar ketika di sorot baru muncul
+    20. transition
+        Memberikan delay
+    21. Untuk menghillangkan gambar menu
+    22. Membuat tampilan yang lancar ketika dibuka di berbagai device.
+        default dari dekstop adalah 1920px.
+    23. right :-100%
+        Menyembunyikan di paling kanan
+    24. display : block
+        Agar menjadi lurus ke bawah. tidak samping kanan
+    25. Dapat digunakan untuk membuat cara scroll menjadi lebih smooth 
+}
+
+Bagian HTML {
+    1. <span> kalimat </span>
+         tag span dapat digunakan untuk menghubungkan antara html dan css, agar kalimat
+         yang berada di dalam tag tersebut dapat berubah warna sesuai dengan warna primary 
+         yang telah di definisikan di dalam :root{}
+    2. <div> (perintah) </div>
+        tag div, dapat diartikan seperti fungsi atau prosedur yang ada di html
+    3. dapat digunakan untuk menampilkan logo credit
+}
+
+Bagian Js {
+    1. (namavar).classList.toggle('active')
+        kondisi ketika bagian namavar terjadi toggle
+}
+
+Bagian Hero{
+    1. Gunakan fitur diatas tersebut untuk membuat kontras antara tulisan dan background
+}
+
+About section{
+    1. Tinggi dari about harus lebih besar, agar tidak tersembunyi ketika menekan shortcut.
+        coba saja ganti dari 10rem ke 1.4rem
+}
+Menu section {
+    1. Usahakan gambar yang digunakan berukuran pixel yang sama ketika diedit
+}
+
+*Tips {
+    1. Ketika menuliskan tag, jika ingin menuliskan banyak tag, dapat menggunakan labang perkalian
+        seperti bintang (*), dan jumlah yang ingin dibuat, agar tidak lelah.
+    2. .(nama div)
+        Dapat digunakan untuk langsung membuat div dengan class="(nama div)"
+    3. Dalam memanggil class, kalau sudah spesifik, tidak perlu ditambah tag
+    4. Perhatikan penggunaan gambar
+    5. Dalam menggunakan feathericon, script harus ditaruh di paling bawah sebelum body
+
+}
