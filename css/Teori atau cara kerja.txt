@@ -51,7 +51,13 @@ Bagian CSS {
     25. Dapat digunakan untuk membuat cara scroll menjadi lebih smooth 
     26. Agar tab search memiliki tinggi 0
     27. Agar ketika di tekan tombol search, muncul dari atas
+    28. auto-fit
+        Berfungsi ketika web dijalankan di laptop, maka akan ditampilkan semuat"nya
+    29. minmax(xrem,1fr)
+        Berfungsi memberi pembatas. ketika mencapat x rem, maka akan menampilkan 1 kolom
+    30. Kalau ingin mengisi star bintang pada feathericon
 }
+
 
 Bagian HTML {
     1. <span> kalimat </span>

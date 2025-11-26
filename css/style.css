@@ -205,19 +205,22 @@ body {
 /* About section */
 .about,
 .menu,
-.kontak {
+.kontak,
+.produk {
   padding: 8rem 7% 1.4rem;
 }
 .about h2,
 .menu h2,
-.kontak h2 {
+.kontak h2,
+.produk h2 {
   text-align: center;
   font-size: 2.6rem 7%;
   margin-bottom: 3rem;
 }
 .about h2 span,
 .menu h2 span,
-.kontak span {
+.kontak span,
+.produk span {
   color: var(--primary);
 }
 .about .row {
@@ -251,7 +254,8 @@ body {
   margin-bottom: 1rem;
 }
 .menu p,
-.kontak p {
+.kontak p,
+.produk p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -293,6 +297,71 @@ body {
   text-align: center;
 }
 /* Menu section end */
+/* Produk Section start */
+.produk .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  /* 28 dan 29 */
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.produk .produk-card {
+  text-align: center;
+  border: 1px solid #666;
+  padding: 2rem;
+}
+.produk .produk-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.produk .produk-icons a {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  margin: 3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produk .produk-icons a:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.produk .produk-img {
+  padding: 0.5rem 0;
+}
+
+.produk .produk-img img {
+  height: 25rem;
+}
+.produk .produk-content h3 {
+  font-size: 2rem;
+}
+.produk .produk-star {
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  color: var(--primary);
+}
+.produk .produk-star .star {
+  /* 30 */
+  fill: var(--primary);
+}
+
+.produk .produk-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.produk .produk-price span {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+/* Produk Section end */
 /* Kontak section */
 .kontak .row {
   display: flex;
@@ -387,7 +456,7 @@ footer .credit a:hover {
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 758px) {
   html {
     font-size: 62.5%;
   }
@@ -421,6 +490,10 @@ footer .credit a:hover {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
+  }
   .about .row {
     flex-wrap: wrap;
   }
@@ -451,7 +524,7 @@ footer .credit a:hover {
 }
 
 /* Mobile Phone */
-@media (max-width: 450px) {
+@media (max-width: 350px) {
   html {
     font-size: 55%;
   }
