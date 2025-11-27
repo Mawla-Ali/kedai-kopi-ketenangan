@@ -521,6 +521,10 @@ footer .credit a:hover {
   width: 80%;
   animation: animateopen 0.5s;
 }
+.modal .close-icon {
+  position: absolute;
+  left: 95%;
+}
 
 /* Modal Animation start*/
 @keyframes animateopen {
