@@ -56,6 +56,10 @@ Bagian CSS {
     29. minmax(xrem,1fr)
         Berfungsi memberi pembatas. ketika mencapat x rem, maka akan menampilkan 1 kolom
     30. Kalau ingin mengisi star bintang pada feathericon
+    31. dashed, agar memberikan garis bawah
+    32. jika ingin mengatur posisi di dalam div yang terbungkus div, maka yang membungkus div
+        tersebut, harus berada pada position relative
+    33. linear berfungsi agar kecepatan muncul selalu sama
 }
 
 
@@ -74,7 +78,9 @@ Bagian HTML {
 Bagian Js {
     1. (namavar).classList.toggle('active')
         kondisi ketika bagian namavar terjadi toggle
+    2. queriesSelectorAll berfungsi memanggil banyak class
 }
+
 
 Bagian Hero{
     1. Gunakan fitur diatas tersebut untuk membuat kontras antara tulisan dan background
