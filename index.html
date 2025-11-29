@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Kopi Ketenangan</title>
     <!-- Pilihan fonts (poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,6 +11,8 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Alpine js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <!-- Navbar start -->
@@ -87,8 +90,7 @@
         <h1 class="sub">Minum <span>Secangkir Kopi</span></h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam.</p>
         <!-- Digunakan untuk pemesanan -->
-        <a href="#" class="cta">Pesan Sekarang</a>
-        <!--  -->
+        <!-- <a href="#" class="cta">Pesan Sekarang</a> -->
       </main>
     </section>
     <!-- Hero section END -->
@@ -141,70 +143,43 @@
     <!-- Menu section end -->
 
     <!-- Produk Section start -->
-    <section id="produk" class="produk">
+    <section id="produk" class="produk" x-data="produk">
       <h2><span>Produk</span> Kami</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi quia corporis soluta repellat veniam.</p>
       <div class="row">
-        <div class="produk-card">
-          <div class="produk-icons">
-            <a href="#"> <i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail1"> <i data-feather="eye"></i></a>
-          </div>
-          <div class="produk-img">
-            <img src="Gambar/Produk/2..jpg" alt="Produk 1" />
-          </div>
-          <div class="produk-content">
-            <h3>Coffe Beans 1</h3>
-            <div class="produk-star">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
+        <template x-for="(item,index) in items" x-key="index">
+          <div class="produk-card">
+            <div class="produk-icons">
+              <a href="#">
+                <!-- <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+                <!-- <use href="Gambar/feather-sprite.svg#shopping-cart" /> -->
+                <!-- </svg> -->
+                <img src="Gambar/shopping-cart.svg" alt="" stroke="currentColor" />
+              </a>
+              <a href="#" class="item-detail1">
+                <img src="Gambar/eye.svg" alt="" stroke="currentColor" />
+              </a>
             </div>
-            <div class="produk-price">IDR 30K <span>55K</span></div>
-          </div>
-        </div>
-        <div class="produk-card">
-          <div class="produk-icons">
-            <a href="#"> <i data-feather="shopping-cart"></i></a>
-            <a href="#"> <i data-feather="eye"></i></a>
-          </div>
-          <div class="produk-img">
-            <img src="Gambar/Produk/2..jpg" alt="Produk 1" />
-          </div>
-          <div class="produk-content">
-            <h3>Coffe Beans 1</h3>
-            <div class="produk-star">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
+            <div class="produk-img">
+              <img :src="`Gambar/Produk/${item.img}`" :alt="item.name" />
+              <!-- 1 -->
             </div>
-            <div class="produk-price">IDR 30K <span>55K</span></div>
-          </div>
-        </div>
-        <div class="produk-card">
-          <div class="produk-icons">
-            <a href="#"> <i data-feather="shopping-cart"></i></a>
-            <a href="#"> <i data-feather="eye"></i></a>
-          </div>
-          <div class="produk-img">
-            <img src="Gambar/Produk/2..jpg" alt="Produk 1" />
-          </div>
-          <div class="produk-content">
-            <h3>Coffe Beans 1</h3>
-            <div class="produk-star">
-              <i data-feather="star" class="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
+            <div class="produk-content">
+              <h3>Coffe Beans 1</h3>
+              <div class="produk-star">
+                <!-- <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+                <!-- <use href="Gambar/feather-sprite.svg#star" /> -->
+                <!-- </svg> -->
+                <img src="Gambar/star.svg" alt="" />
+                <img src="Gambar/star.svg" alt="" />
+                <img src="Gambar/star.svg" alt="" />
+                <img src="Gambar/star.svg" alt="" />
+                <img src="Gambar/star.svg" alt="" />
+              </div>
+              <div class="produk-price"><span x-text="item.price"></span></div>
             </div>
-            <div class="produk-price">IDR 30K <span> IDR 55K</span></div>
           </div>
-        </div>
+        </template>
       </div>
     </section>
     <!-- Produk Section start -->
@@ -283,25 +258,6 @@
           </div>
         </div>
       </div>
-      <div class="modal-container">
-        <a href="#" class="close-icon"> <i data-feather="x"></i></a>
-        <div class="modal-content">
-          <img src="Gambar/Produk/1..jpg" alt="Produk 1" />
-          <div class="produk-content">
-            <h3>Product 1</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, iusto atque. Quaerat quas expedita voluptas officia at quasi deserunt nobis quis autem facilis, dolores earum.</p>
-            <div class="produk-star">
-              <i data-feather="star" class="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="produk-price">IDR 30K <span>50K</span></div>
-            <a href="#" class="close-item"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Modal Box Item Detail end -->
     <!-- Feather icons -->
@@ -310,5 +266,7 @@
     </script>
     <!-- My Javascript -->
     <script src="js/script.js"></script>
+    <!-- App js -->
+    <script src="src/app.js"></script>
   </body>
 </html>

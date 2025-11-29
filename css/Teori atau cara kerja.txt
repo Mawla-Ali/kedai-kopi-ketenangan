@@ -72,7 +72,6 @@ Bagian HTML {
         tag div, dapat diartikan seperti fungsi atau prosedur yang ada di html
     3. dapat digunakan untuk menampilkan logo credit
     4. place holder dapat digunakan untuk menempatkan tulisan di dalam form pencarian
-
 }
 
 Bagian Js {
@@ -93,7 +92,9 @@ About section{
 Menu section {
     1. Usahakan gambar yang digunakan berukuran pixel yang sama ketika diedit
 }
-
+Produk section{
+    1. Ketika menggunakan alpine untuk emnampilkan gambar, gunakan tanda petik miring. bukan hanya petik satu
+}
 *Tips {
     1. Ketika menuliskan tag, jika ingin menuliskan banyak tag, dapat menggunakan labang perkalian
         seperti bintang (*), dan jumlah yang ingin dibuat, agar tidak lelah.
