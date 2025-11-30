@@ -731,7 +731,7 @@ footer .credit a:hover {
 /* Mobile Phone */
 @media (max-width: 480px) {
   html {
-    font-size: 55%;
+    font-size: 100%;
   }
   #hamburger-menu {
     display: inline-block;
