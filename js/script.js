@@ -49,7 +49,7 @@ document.querySelector("#shopping-cart-btn").onclick = (e) => {
 
 //Membuat Modal box
 const itemdet = document.querySelector("#item-detail-modal");
-const itemdetbutton = document.querySelector(".item-detail1");
+const itemdetbutton = document.querySelector(".Americano");
 
 itemdetbutton.onclick = (e) => {
   itemdet.style.display = "flex";

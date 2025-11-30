@@ -1,11 +1,41 @@
 document.addEventListener("alpine:init", () => {
   Alpine.data("produk", () => ({
     items: [
-      { id: 1, name: "Robusta Brazil", img: "1.jpg", price: 20000 },
-      { id: 2, name: "Americano", img: "2.jpg", price: 25000 },
-      { id: 3, name: "Arabica blend", img: "3.jpg", price: 30000 },
-      { id: 4, name: "Luberica", img: "4.jpg", price: 35000 },
-      { id: 5, name: "Arabica Typica", img: "5.jpg", price: 40000 },
+      {
+        id: 1,
+        name: "Robusta Brazil",
+        img: "1.jpg",
+        price: 20000,
+        ket: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, iusto atque. Quaerat quas expedita voluptas officia at quasi deserunt nobis quis autem facilis, dolores earum.",
+      },
+      {
+        id: 2,
+        name: "Americano",
+        img: "2.jpg",
+        price: 25000,
+        ket: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, iusto atque. Quaerat quas expedita voluptas officia at quasi deserunt nobis quis autem facilis, dolores earum.",
+      },
+      {
+        id: 3,
+        name: "Arabica blend",
+        img: "3.jpg",
+        price: 30000,
+        ket: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, iusto atque. Quaerat quas expedita voluptas officia at quasi deserunt nobis quis autem facilis, dolores earum.",
+      },
+      {
+        id: 4,
+        name: "Luberica",
+        img: "4.jpg",
+        price: 35000,
+        ket: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, iusto atque. Quaerat quas expedita voluptas officia at quasi deserunt nobis quis autem facilis, dolores earum.",
+      },
+      {
+        id: 5,
+        name: "Arabica Typica",
+        img: "5.jpg",
+        price: 40000,
+        ket: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, iusto atque. Quaerat quas expedita voluptas officia at quasi deserunt nobis quis autem facilis, dolores earum.",
+      },
     ],
   }));
 
