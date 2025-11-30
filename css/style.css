@@ -651,7 +651,7 @@ footer .credit a:hover {
 /* Media Queries */
 /* 22 */
 /* Laptop */
-@media (max-width: 1366px) {
+@media (min-width: 1366px) {
   html {
     font-size: 75%;
   }
@@ -729,7 +729,7 @@ footer .credit a:hover {
 }
 
 /* Mobile Phone */
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   html {
     font-size: 55%;
   }
