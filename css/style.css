@@ -729,7 +729,7 @@ footer .credit a:hover {
 }
 
 /* Mobile Phone */
-@media (max-width: 350px) {
+@media (max-width: 480px) {
   html {
     font-size: 55%;
   }
